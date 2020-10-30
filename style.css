@@ -1,0 +1,79 @@
+header, .description, .more, .refresh {
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+}
+.refresh {
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+}
+.refresh button {
+    padding: 0;
+    float: right;
+    border: none;
+    background: none;
+    position: relative;
+    bottom: 15px;
+}
+.refresh button > span {
+    position: relative;
+    bottom: 5px;
+    right: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #333333;
+}
+.description {
+    border-left: 8px solid #F7DF94;
+    padding-inline-start: 2rem;
+}
+
+.btn--desc {
+    border: 0;
+    background: none;
+    max-width: 100%;
+    min-width: 100%;
+}
+.description p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 120%;
+}
+.more {
+    background: #333333;
+    padding: 29px;
+}
+
+.more h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F2F2F2;
+}
+
+.more button {
+    position: relative;
+    bottom: 42px;
+    padding: 0;
+    float: right;
+    border: none;
+    background: none;
+}
+
+.more span {
+    clear: both;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+}
+.link a {
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+}
