@@ -9,7 +9,7 @@ function RandomQuote({quoteText,quoteAuthor,quoteGenre, handleClick}) {
         return (
             <>
             <header>
-                <h1>Random quotes</h1>
+                <h1>Random quotes generator</h1>
             </header>
             <div className="refresh">
                 <button onClick={handleClick}>
@@ -19,8 +19,9 @@ function RandomQuote({quoteText,quoteAuthor,quoteGenre, handleClick}) {
             </div>
             
             <div className="description">
-                <p>{quoteText}</p>
+                <p>"{quoteText}"</p>
             </div>
+            <div className="more--quotes">
                 <Link to={`/authors/${quoteAuthor}`}>
                     <div className="more">
                         <h4>{quoteAuthor}</h4>
@@ -30,6 +31,7 @@ function RandomQuote({quoteText,quoteAuthor,quoteGenre, handleClick}) {
                         <span>{quoteGenre}</span>
                     </div>
                 </Link>
+            </div>
             </>
         )
 }

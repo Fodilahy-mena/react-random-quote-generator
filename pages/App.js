@@ -25,7 +25,7 @@ function App() {
             <Router>
 				<Switch>
                     <Route path="/authors/:authorName">
-                        <Detail/>
+                        <Detail {...randomQuote}/>
 					</Route>
                     <Route path="/">
                         <RandomQuote handleClick={handleClick} {...randomQuote}/>

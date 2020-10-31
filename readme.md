@@ -55,14 +55,16 @@ Template for your readme :
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](./screenshot.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+I have a good experience since it is a react render. It is very new for me so I got some problem when doing it.
 
--   Where can I see your demo?
--   What was your experience?
--   What have you learned/improved?
--   Your wisdom? :)
+I got the random quote from Get random quote url and displayed its properties on the browser after fecth. It works very well. 
+
+The problem came when I tried to get all the quotes that are belong to the author name from random quote. When passing authorName to the Get quotes from a particular author url, there should be `authors/:authorName` as a path and `authors/{whoeverTheAuthorName}` as a link to get to all authorname's quotes, but I sttil used column `:` with `authors/{whoeverTheAuthorName}`. It was solved by taking off `:`.
+
+I was so confused about accessing the author name to be displayed on the next page (all quotes that are owned by author name). However, I got it by spreading the data of the random quote on the list of all quotes file and access the author name iside of that file. 
+
 
 ### Built With
 

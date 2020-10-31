@@ -1,7 +1,55 @@
-header, .description, .more, .refresh {
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,bold&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+}
+
+#root > div {
     max-width: 80%;
     min-width: 80%;
     margin: auto;
+}
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #333333;
+}
+
+/* .description, .refresh , .link{
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+}
+header, .more {
+    max-width: 75%;
+    min-width: 75%;
+    margin: auto;
+} */
+header {
+    margin-inline-start: 100px;
+}
+.description {
+    margin-inline-end: 100px;
+}
+.more--quotes a {
+    border-radius: 5px;
+}
+.more--quotes {
+    margin-inline-start: 75px;
+    margin-inline-end: 75px;
+    
+}
+
+.more--quotes:hover {
+    -webkit-box-shadow: -4px 5px 5px 0px rgb(207, 153, 3);
+    -moz-box-shadow:    -4px 5px 5px 0px rgb(207, 153, 5);
+    box-shadow:         -4px 5px 5px 0px   rgb(214, 158, 2);
+}
+.more--quotes a {
+    text-decoration: none;
 }
 .refresh {
     padding-block-start: 1rem;
@@ -27,8 +75,11 @@ header, .description, .more, .refresh {
 }
 .description {
     border-left: 8px solid #F7DF94;
-    padding-inline-start: 2rem;
+    padding-inline-start: 100px;
+    box-shadow: 0px 1px 0px 0px #F7DF94; 
+    border-radius: 5px;
 }
+
 
 .btn--desc {
     border: 0;
@@ -41,10 +92,14 @@ header, .description, .more, .refresh {
     font-weight: 500;
     font-size: 36px;
     line-height: 120%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
 }
 .more {
     background: #333333;
     padding: 29px;
+    border-radius: 5px;
 }
 
 .more h4 {
@@ -76,4 +131,26 @@ header, .description, .more, .refresh {
     text-decoration: none;
     font-size: 20px;
     color: blue;
+    border: 1px solid #F7DF94;
+    border-radius: 5px;
+    padding: 5px;
+}
+.link svg {
+    position: relative;
+     top: 2px;
+}
+hr {
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+footer {
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    opacity: .5;
+
 }
